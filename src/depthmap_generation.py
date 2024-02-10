@@ -700,6 +700,8 @@ def estimateboost(img, model, model_type, pix2pixmodel, whole_size_threshold):
         net_receptive_field_size = 512
     elif model_type == 11:  # depth_anything
         net_receptive_field_size = 518
+    elif model_type == 10:
+        net_receptive_field_size = 768
     else:  # other midas  # TODO Marigold support
         net_receptive_field_size = 384
     patch_netsize = 2 * net_receptive_field_size
